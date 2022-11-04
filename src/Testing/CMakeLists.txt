@@ -28,8 +28,3 @@ add_test(NAME test-processcommandline COMMAND testProcessCommandLine)
 add_executable(testCaeserCipher testCaeserCipher.cpp)
 target_link_libraries(testCaeserCipher MPAGSCipher)
 add_test(NAME test-caesercipher COMMAND testCaeserCipher)
-
-#include CipherMode enum class here as well (not sure if i want to test it yet but I'll need it in testCaeserCipher.cpp to use it properly)
-add_executable(testCipherMode testCipherMode.cpp)
-target_link_libraries(testCipherMode MPAGSCipher)
-add_test(NAME test-ciphermode COMMAND testCipherMode)
